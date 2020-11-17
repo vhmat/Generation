@@ -1,0 +1,12 @@
+package Exercicios1711;
+
+import java.util.Scanner;
+
+public class EscolhaCaso {
+	public static void main (String[] args) {
+		int oi=0;
+		Scanner read = new Scanner (System.in);
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package Exerc;
+
+import java.util.Scanner;
+
+public class Exerc8 {
+	public static void main (String[] args) {
+		int n=0;
+		Scanner ler = new Scanner (System.in);
+		System.out.println("Programa que retorna um número somente se for maior que 100. Senão, retorna 0.\n");
+		System.out.println("Digite um número: ");
+	}
+
+}
