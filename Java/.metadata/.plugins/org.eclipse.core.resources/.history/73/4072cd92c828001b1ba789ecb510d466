@@ -1,0 +1,27 @@
+package Exerc;
+
+import java.util.Scanner;
+
+public class Exerc {
+
+	public static void main(String[] args) {
+		int area=0, base=0, altura=0;
+		Scanner ler = new Scanner (System.in);  
+		System.out.println("Digite o número da base do triângulo: ");
+		base=ler.nextInt();
+		System.out.println("Digite o número da altura do triângulo: ");
+		altura=ler.nextInt();
+		if(base<0 || altura<0) {
+			System.out.println("Um dos números digitados é negativo. Favor iniciar o programa novamente!");
+		}
+		else {
+		area=((base*altura)/2);
+		System.out.println("A área do triângulo é igual a "+ area);
+		}
+		
+		
+		
+		
+	}
+
+}
