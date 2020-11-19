@@ -1,0 +1,43 @@
+Automóvel – um automóvel é um meio de transporte contendo diferentes tipos;
+ligar 
+desligar 
+acelerar
+frear 
+conduzir
+acomodar
+
+lataria – delimita os limites do automóvel e acomoda outros componentes
+janelas – fornece visão dos arredores
+motor – faz o automóvel funcionar
+câmbio – controle de marchas
+volante – possibilita a condução
+Pessoa – uma pessoa é um ser humano; pode ser de diferentes etnias;
+	andar 
+pular 
+correr 
+falar 
+comer 
+beber 
+necessidades
+sentir
+
+Mão – pega objetos
+Braços – comportam as mãos
+Pernas – conduzem 
+Cabeça – comportam órgãos
+Coração – bombeia sangue p o corpo funcionar
+Casa – uma casa é uma estrutura onde seres humanos habitam ou frequentam.
+Uma casa pode abrigar 
+proteger
+acomodar
+resistir
+
+Material – composição
+Medida – limites da casa
+Espaço – espaços disponíveis
+Parede – divisões 
+Chão – suporte 
+
+Um automóvel pode acomodar uma pessoa e se conduzido para diferentes locais;
+Uma pessoa dirige um automóvel e o guarda dentro de uma casa. Essa pessoa pode habitar ou frequentar essa casa;
+Uma casa abriga e protege pessoas.
