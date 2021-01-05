@@ -27,12 +27,12 @@ public class Produto {
 	@NotNull
 	private String marca;
 	
-	@ManyToOne
-	@JsonIgnoreProperties("produto")
+	@ManyToOne //chave estrangeira
+	@JsonIgnoreProperties("produto") //
 	private CategoriaEletro categoria;
 	
 	@ManyToOne
-	@JsonIgnoreProperties("produto")
+	@JsonIgnoreProperties("produto") 
 	private TipoEletro eletro;
 	
 	public long getId() {

@@ -32,14 +32,11 @@ public class Categoria {
 	@OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("categoria")
 	private List<Produto> produto; 
-	
-
 	/*
 	 * @ManyToOne  //indica que é a chave primária
 	@JsonIgnoreProperties("postagem") // quer ignorar a coluna postagem que está na tabela tema
 	private Tema tema; // tema (t minúsculo) é um objeto que possui os atributos d
 	 * */
-	
 	
 	public long getId() {
 		return id;

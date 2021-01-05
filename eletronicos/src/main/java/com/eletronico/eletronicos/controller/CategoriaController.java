@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.eletronico.eletronicos.model.CategoriaEletro;
 import com.eletronico.eletronicos.repository.CategoriaRepository;
 
 
@@ -25,22 +27,22 @@ public class CategoriaController {
 	private CategoriaRepository repository;
 	
 	@GetMapping
-	public ResponseEntity<List<CategoriaController>> getAll(){
+	public ResponseEntity<List<CategoriaEletro>> getAll(){
 		return ResponseEntity.ok(repository.findAll());
 	}
 	
 	@GetMapping("/{id}")
-	public ResponseEntity<CategoriaController> get(@PathVariable long id){
+	public ResponseEntity<CategoriaEletro> get(@PathVariable long id){
 		return repository.findById(id).map(answer -> ResponseEntity.ok(answer)).orElse(ResponseEntity.notFound().build());
 	}
 	
 	@PostMapping
-	public ResponseEntity<CategoriaController> inserirObjeto(@RequestBody CategoriaController creatingData){
+	public ResponseEntity<CategoriaEletro> inserirObjeto(@RequestBody CategoriaEletro creatingData){
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(creatingData));
 	}
 	
 	@PutMapping
-	public ResponseEntity<CategoriaController> put(@RequestBody CategoriaController updatingData){
+	public ResponseEntity<CategoriaEletro> put(@RequestBody CategoriaEletro updatingData){
 		return ResponseEntity.status(HttpStatus.OK).body(repository.save(updatingData));
 	}
 	

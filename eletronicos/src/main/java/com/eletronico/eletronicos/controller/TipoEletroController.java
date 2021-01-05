@@ -40,6 +40,10 @@ public class TipoEletroController {
 		return ResponseEntity.status(HttpStatus.OK).body(repository.save(creatingData));
 	}
 	
+	//Retornando pacote htttps do TipoEletro. Recebendo algo pela body -> um objeto do TipoEletro. 
+	//Retornar com status ok 
+	
+	
 	@PutMapping
 	public ResponseEntity<TipoEletro> put(@RequestBody TipoEletro  updatingData){
 		return ResponseEntity.status(HttpStatus.OK).body(repository.save(updatingData));
