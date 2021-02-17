@@ -24,11 +24,11 @@ public class Postagem {
 	private long id;
 	
 	@NotNull
-	@Size(min = 5, max = 100)	 
+	@Size(min = 1, max = 50)	 
 	private String titulo;
 	
 	@NotNull
-	@Size(min = 10, max = 500)	 
+	@Size(min = 1, max = 250)	 
 	private String texto;
 	
 	@Temporal(TemporalType.TIMESTAMP)
@@ -43,8 +43,9 @@ public class Postagem {
 	private Tema tema; // tema (t minúsculo) é um objeto que possui os atributos d
 	
 	
-	
-	
+	@ManyToOne
+	@JsonIgnoreProperties("postagem")
+	private Usuario usuario;
 	
 	
 	public long getId() {
@@ -78,4 +79,10 @@ public class Postagem {
 	public void setTema(Tema tema) {
 		this.tema = tema;
 	}
+	public Usuario getUsuario() {
+		return usuario;
+	}
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}	
 }
